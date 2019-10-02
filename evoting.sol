@@ -81,10 +81,6 @@ contract Elections{
         return voterAdds;
     }
     
-    function getCanList() public view returns(address[] memory){
-        return candAdds;
-    }
-    
     function viewVotingStatus(address _cadd) public view Verification(_cadd) returns(uint){
         return Candidate[_cadd].votes;
     }
