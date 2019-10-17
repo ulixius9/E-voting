@@ -62,6 +62,7 @@ contract Elections{
         ValidVoters[_ad].voted=false;
         voterAdds.push(_ad);
         voterCount++;
+        //function close
     }
     
     function addCandidate(address _add) public Verification(_add) Admin(){
